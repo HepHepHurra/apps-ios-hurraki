@@ -65,7 +65,7 @@ var app = {
               
               //alert('date:' + date.value + '\n');
               
-                var SQL='INSERT INTO `saved_list` (`id`, `page_title`, `page_language`, `page_contents`, `saved_on`) VALUES (NULL, "'+TITLE+'", "'+LANGUAGE+'", "'+encodeURIComponent(encodeURI(DATA))+'", "'+date.value+'")';
+                var SQL='INSERT INTO `saved_list` (`id`, `page_title`, `page_language`, `page_contents`, `saved_on`) VALUES (NULL, "'+encodeURIComponent(encodeURI(TITLE))+'", "'+LANGUAGE+'", "'+encodeURIComponent(encodeURI(DATA))+'", "'+date.value+'")';        
         
              //db.executeSql(SQL);
               

@@ -461,7 +461,7 @@ function ShowSavePage()
                    }
                    
                    console.log("saved_on> "+saved_on)
-                   jQuery("#content").append("<div id='"+res.rows.item(i).id+"' style='border-bottom:#999 1px solid;' onclick='LoadSavedPage(this.id)'><h3>"+res.rows.item(i).page_title+"</h3><h4><span id='saved_on'>"+saved_on+"</span> "+res.rows.item(i).saved_on+"</h4></div>")
+                   jQuery("#content").append("<div id='"+res.rows.item(i).id+"' style='border-bottom:#999 1px solid;' onclick='LoadSavedPage(this.id)'><h3>"+decodeURIComponent(decodeURI(res.rows.item(i).page_title))+"</h3><h4><span id='saved_on'>"+saved_on+"</span> "+res.rows.item(i).saved_on+"</h4></div>")
                    
                }
                
